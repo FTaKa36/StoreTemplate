@@ -1,0 +1,1325 @@
+/* Setting default halaman html */
+body {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/* Setting page active */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Setting header */
+.SecHead {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.HeadGambar {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+}
+
+.HeadGambar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Setting navigation */
+.HeadNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(4, 84, 147, 0.8);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.NavBar nav {
+    display: flex;
+}
+
+.NavBar nav .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.NavBar nav .menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.NavBar nav .menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+.NavBar nav .menu li a:hover {
+    color: #DBBC62;
+}
+
+/* Setting submenu */
+.NavBar nav .menu li .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(4, 84, 147, 0.9);
+    display: none;
+    z-index: 10;
+}
+
+.NavBar nav .menu li:hover .submenu {
+    display: block;
+}
+
+.NavBar nav .menu li .submenu li {
+    margin: 0;
+}
+
+.NavBar nav .menu li .submenu li a {
+    padding: 10px 15px;
+    color: white;
+    white-space: nowrap;
+}
+
+.NavBar nav .menu li .submenu li a:hover {
+    color: #DBBC62;
+}
+
+/* Setting tanda anak panah pada submenu */
+.NavBar nav .menu li.has-submenu > a::after {
+    content: "\25BE";
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.NavBar nav .menu li.has-submenu > a:hover::after {
+    color: #DBBC62;
+}
+
+/* Setting search bar */
+.NavSearch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.SearchContainer {
+    display: flex;
+    align-items: center;
+    border: 2px solid #DBBC62;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+    transition: box-shadow 0.3s;
+}
+
+.SearchContainer:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input search */
+.SearchContainer input {
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    width: 500px;
+    transition: width 0.3s;
+}
+
+.SearchContainer input:focus {
+    width: 700px;
+}
+
+/* Tombol search */
+.SearchContainer button {
+    border: none;
+    background-color: #DBBC62;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.SearchContainer button:hover {
+    background-color: #B79547;
+}
+
+.SearchContainer button img {
+    width: 17px;
+    height: 18px;
+}
+
+/* Setting Chart dan Akun */
+.ChartAkun {
+    display: flex;
+}
+
+.Akun{
+    height: 45px;
+    width: 45px;
+    margin-bottom: 5.5px;
+    margin-left: 10px;
+}
+
+.Keranjang{
+    height: 60px;
+    width: 60px;
+}
+
+.Akun, .Keranjang{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#HAkun .HalamanDepan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.IsiAkun {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Keranjang:hover,
+.Akun:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#auth-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  justify-content: center;
+}
+
+#auth-container input {
+  width: 94%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px; 
+  border: 1px solid #ccc;
+}
+
+#auth-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #045493;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#auth-container button:hover {
+  background-color: #033c6d;
+}
+
+/* Setting div halaman utama */
+.HalamanUtamaK {
+    display: grid;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Setting bagian galeri */
+.JudulGaleri h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.GarisGaleri {
+    height: 2px;
+    background-color: #045493;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.GambarGaleri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 92%;
+    height: 470px;
+    position: relative;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 8px 7px 5px #46473e;
+}
+
+.GambarGaleriSlide {
+    display: flex;
+    width: calc(100% * 6);
+    animation: slide_animation 18s ease-in-out infinite;
+    position: relative;
+}
+
+.AssetGambar {
+    flex: 0 0 100%;
+    width: 92%;
+    height: 470px;
+}
+
+.FotoGaleri {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Setting animasi */
+@keyframes slide_animation {
+    0%, 16.66% {
+        transform: translateX(0%);
+    }
+    16.67%, 33.33% {
+        transform: translateX(-100%);
+    }
+    33.34%, 50% {
+        transform: translateX(-200%);
+    }
+    50.01%, 66.66% {
+        transform: translateX(-300%);
+    }
+    66.67%, 83.33% {
+        transform: translateX(-400%);
+    }
+    83.34%, 100% {
+        transform: translateX(-500%);
+    }
+}
+
+/* Setting bagian footer */
+.SecKaki {
+    width: 100%;
+    height: 330px;
+    background-color:rgba(4, 84, 147, 0.8);
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.GambarKaki {
+    margin-top: 40px;
+}
+
+.GambarKaki h5{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin: 0;
+}
+
+.GambarKaki img{
+    width: 150px;
+    height: 150px;
+}
+
+.KataKaki {
+    margin-top: 40px;
+}
+
+.KataKaki h5{
+    font-size: 15px;
+}
+
+.SosmedKaki {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.SosmedKaki img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.SosmedKaki img:hover {
+    transform: scale(1.3);
+}
+
+.MapKaki {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InfoKaki {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.InfoKaki .Alamat .InfoKaki .Telepon .Buka{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.InfoKaki img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+/* Setting pada home */
+/*Setting bagian berita */
+
+.GarisHU {
+    height: 2px;
+    background-color: #045493;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.JudulUtama h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.BeritaGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.BeritaBox span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.BeritaBox {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.BeritaBox img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.BeritaBox h3 {
+    margin: 10px 0;
+    color: #045493;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.BeritaBox h3 a {
+    text-decoration: none;
+    color: #045493;
+    transition: color 0.3s;
+}
+
+.BeritaBox h3 a:hover {
+    color: #DBBC62;
+}
+
+.BeritaBox p {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.BeritaBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.BtnSelengkapnya {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #045493;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.BtnSelengkapnya:hover {
+    background-color: #DBBC62;
+}
+
+.BeritaLengkap {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.BeritaLengkap a {
+    text-decoration: none;
+    color: white;
+    background-color: #045493;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.BeritaLengkap a:hover {
+    background-color: #DBBC62;
+}
+
+/* Setting pada bagian statistik smalab */
+.Statis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.JudulStatis h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.GridStatis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    justify-items: center;
+}
+
+.Kategori {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Kategori:hover {
+    background: #e0e0e0;
+}
+
+.Kategori img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.DetailB1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Setting pada buku tamu */
+.GuestBook {
+    margin-top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.GuestBookToggle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #045493;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.GuestBookToggle:hover {
+    color: #032f67;
+    transform: scale(1.1);
+}
+
+.GuestBookForm {
+    display: none;
+    margin-top: 10px;
+    animation: slideDown 0.5s ease forwards;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.GuestBookForm input,
+.GuestBookForm textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.GuestBookForm input[type="text"],
+.GuestBookForm input[type="email"] {
+    height: 40px;
+}
+
+.GuestBookForm textarea {
+    height: 100px;
+    resize: none;
+}
+
+.GuestBookForm button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #045493;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 75px;
+    height: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.GuestBookForm button:hover {
+    background-color: #032f67;
+    transform: scale(1.05);
+}
+
+.GuestBookForm button:active {
+    transform: scale(0.98);
+}
+
+.GuestBookForm .CloseForm {
+    background-color: #e74c3c;
+    margin-top: 10px;
+}
+
+.GuestBookForm .CloseForm:hover {
+    background-color: #c0392b;
+}
+
+.GuestBookForm .CloseForm:active {
+    transform: scale(0.98);
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.GBButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.GuestBookToggle:hover {
+    transform: scale(1.1);
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
+.GuestBookForm.closed {
+    animation: slideUp 0.5s ease forwards;
+    display: block;
+}
+
+/* Setting pada visi & misi */
+.HalamanDepan {
+    margin-top: 40px;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding: 0;
+}
+
+.Widget {
+    display: block;
+    width: 450px;
+    margin-left: 50px;
+}
+
+.ListWA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 22px;
+}
+
+.ListWA a {
+    display: block;
+    text-decoration: none;
+    color: #045493;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.ListWA a:hover {
+    color: #fff;
+    background-color: #045493;
+    border-color: #DBBC62;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ListWT {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 22px;
+}
+
+.ListWT a {
+    display: block;
+    text-decoration: none;
+    color: #045493;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.ListWT a:hover {
+    color: #fff;
+    background-color: #045493;
+    border-color: #DBBC62;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Statisik {
+    scroll-margin-top: 100px;
+}
+
+.H2Widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Inti {
+    display: grid;
+    width: 851px;
+}
+
+.KataVM {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.H2VM {
+    text-align: center;
+}
+.ProdukGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.ProdukGrid img {
+    width: 200px;
+    height: 200px;
+}   
+
+.ProdukItem {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.ProdukItem:hover {
+    transform: scale(1.03);
+}
+
+.ProdukItem img {
+    width: 100%;
+    height: auto;
+    max-height: 160px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.ProdukItem h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.harga {
+    font-weight: bold;
+    color: #045493;
+    margin-bottom: 10px;
+}
+
+.tombol-beli {
+    padding: 8px 16px;
+    background-color: #045493;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tombol-beli:hover {
+    background-color: #033c6d;
+}
+
+/* Setting pada sejarah */
+.KataS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.H2S {
+    text-align: center;
+}
+
+.PS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Setting pada SO */
+
+.KataDG {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HDG {
+    text-align: center;
+}
+
+/*Setting pada bagian keranjang*/
+/* Tabel Keranjang */
+.CartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.CartTable th, .CartTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.CartTable th {
+    background-color: #045493;
+    color: white;
+}
+
+.CartTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.CartTable tr:hover {
+    background-color: #e6f7ff;
+}
+
+.qty-input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Kontainer tengah halaman keranjang */
+.IsiKeranjang {
+    display: flex;
+    justify-content: center;
+}
+
+.KotakChart {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #f8f9fc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Kontrol Kuantitas */
+.QtyControl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.qty-display {
+    width: 45px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.qty-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #045493;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.qty-btn:hover {
+    background-color: #DBBC62;
+}
+
+/* Tombol checkout */
+.BtnCheckout {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #045493;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.BtnCheckout:hover {
+    background-color: #DBBC62;
+}
+
+/* Tombol hapus */
+.btn-hapus {
+    padding: 6px 12px;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-hapus:hover {
+    background-color: #c0392b;
+}
+
+/* Ringkasan total harga */
+.CartSummary {
+    margin-top: 30px;
+    text-align: right;
+}
+
+/* Membuat kotak keranjang berada di tengah */
+.CenteredBox {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*Setting pada halaman checkout*/
+.CheckoutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 80vh;
+    background-color: #f8f9fc;
+}
+
+.CheckoutBox {
+    background: #ffffff;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.CheckoutTitle {
+    text-align: center;
+    font-size: 24px;
+    color: #045493;
+    margin-bottom: 25px;
+}
+
+.CheckoutForm label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #333;
+}
+
+.CheckoutForm input,
+.CheckoutForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.CheckoutForm textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.BtnBayar {
+    width: 100%;
+    padding: 12px;
+    background-color: #045493;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.BtnBayar:hover {
+    background-color: #DBBC62;
+}
+
+/* Setting pada halaman kedua */
+.HalamanKedua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Setting pada bagian checkout container */
+.CheckoutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 200px;
+    min-height: 80vh;
+    background-color: #f8f9fc;
+}
+
+.KonfirmasiBayarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 200px;
+    min-height: 80vh;
+    background-color: #f4f6f9;
+}
+
+.KonfirmasiBayarBox {
+    background: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.KonfirmasiBayarTitle {
+    text-align: center;
+    font-size: 24px;
+    color: #045493;
+    margin-bottom: 30px;
+}
+
+.RingkasanPesanan h3,
+.MetodeBayar h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.ListPesanan {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.ListPesanan li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+.TotalAkhir {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+}
+
+.MetodeBayar select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.BtnBayarSekarang {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #045493;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.BtnBayarSekarang:hover {
+    background-color: #DBBC62;
+}
+
+/* Barang Diterima */
+.BarangDiterimaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 200px;
+    min-height: 70vh;
+    background-color: #f4f6f9;
+}
+
+.BarangDiterimaBox {
+    background-color: #ffffff;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.BarangDiterimaBox h2 {
+    font-size: 26px;
+    color: #045493;
+    margin-bottom: 20px;
+}
+
+.BarangDiterimaBox p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.BtnKembali {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: #045493;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.BtnKembali:hover {
+    background-color: #DBBC62;
+}
+
+/* Halaman Produk Detail */
+.ProdukDetailContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin: auto;
+}
+
+.ProdukDetailGambar {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProdukDetailGambar img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.ProdukDetailInfo {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ProdukDetailInfo h2 {
+    font-size: 28px;
+    color: #045493;
+    margin-bottom: 10px;
+}
+
+.HargaProduk {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.DeskripsiProduk {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.SpesifikasiProduk {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.SpesifikasiProduk li {
+    padding: 6px 0;
+    border-bottom: 1px dashed #ccc;
+    font-size: 15px;
+}
+
+.ProdukDetailInfo .tombol-beli {
+    padding: 12px 20px;
+    background-color: #045493;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ProdukDetailInfo .tombol-beli:hover {
+    background-color: #DBBC62;
+}
