@@ -89,10 +89,10 @@ The PHP files need a web server with PHP and MySQL.
 
 | Feature | Status |
 | --- | --- |
-| Responsive layout | Done |
-| Modern theme and animations | Done |
-| Navigation and mobile menu | Done |
-| Product, category, and detail pages | Done |
+| Responsive layout | In progress |
+| Modern theme and animations | In progress |
+| Navigation and mobile menu | In progress |
+| Product, category, and detail pages | In progress |
 | Search | Done |
 | Shopping cart and checkout | In progress - cart is stored in the browser only |
 | Login / register | In progress - demo only, not connected to a real login |
