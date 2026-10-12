@@ -1,6 +1,6 @@
 # TungTung Store
 
-An e-commerce website template for a computer and gadget store. The UI is responsive across TV, desktop, tablet, and mobile (Android/iOS), with a modern theme and animations.
+An e-commerce website template for a computer and gadget store. The UI is planned to be a responsive across TV, desktop, tablet, and mobile (Android/iOS), with a modern theme and animations.
 
 > **Status: still in development.** Some features are not 100% finished. See [Feature status](#feature-status) below.
 
